@@ -1,0 +1,263 @@
+@charset "utf-8";
+/*
+   LIVE Bait Shop
+   Author: Dustin Fischer
+   Date:   7/19/2021
+
+   Filename: styles.css
+
+*/
+
+
+.backgroundVid
+{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header
+{
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.95;
+}
+header > img
+{
+  border-radius: 25px 25px 0 0;
+}
+h2
+{
+  background-color: #cda78b;
+  font-size: 2em;
+  width: 80vw;
+  margin-top: -.1%;
+  border-radius: 0 0 25px 25px;
+}
+
+nav > ul
+{
+  list-style-type: none;
+  margin: 0;
+  margin-top: -10%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3f61a7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li a
+{
+   color: white;
+   text-align: center;
+   padding: 14px 25px;
+   text-decoration: none;
+   font-size: 1.5em
+ }
+
+ li a:hover
+ {
+   background-color: darkgrey;
+ }
+
+ .Panels
+ {
+   margin-left: 2%;
+   margin-top: 20%;
+   position: relative;
+   vertical-align: top;
+   top: 50%;
+   bottom: 10%;
+   display: flex;
+   flex: auto;
+   flex-flow: row wrap;
+   padding:0;
+ }
+
+ .storePanel
+ {
+  margin-left: 1%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #cda78b;
+  width: 30%;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+.storePanel > ul
+{
+  text-align: left;
+}
+.storePanel > img
+{
+  width: 100%;
+  height: 300px;
+}
+
+.servicePanel
+{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #cda78b;
+  width: 30%;
+  padding-bottom: 4.7%;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+.servicePanel > img
+{
+  width: 100%;
+  height: 300px;
+}
+
+.contactPanel
+{
+  margin-bottom: 5px;
+  padding-bottom: 2%;
+  background-color: #cda78b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border-radius: 0 0 15px 15px;
+}
+.contactPanel > a
+{
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+}
+.contactPanel > a:hover
+{
+  background-color: #3f61a7;
+}
+.contactPanel > img
+{
+  width: 100%;
+  height: 300px;
+}
+
+.faceBook
+{
+  width: 150px;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  background-color: #574643;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faceBook > a > img
+{
+  width: 100px;
+}
+.faceBook > a > img:hover
+{
+  width: 120px;
+}
+
+.pricepage
+{
+  margin-top: 20%;
+  margin-left: 10%;
+  position: relative;
+  top: 50%;
+  bottom: 10%;
+  width: 80vw;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(lures.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.priceheader
+{
+  margin-top: 0px;
+  width: 80%;
+  text-align: center;
+  background-color: #696a74;
+  color: white;
+}
+
+.pricechart
+{
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 35%;
+  display: block;
+  background-color: #cda78b;
+}
+.pricechart > h3
+{
+  margin-left: 5px;
+}
+.pricechart > ul
+{
+  list-style: none;
+  margin-top: -2%;
+  margin-right: 5px;
+  padding: 0;
+  width: 45%;
+}
+
+@media screen and (max-width: 800px) {
+
+  .storePanel
+  {
+    width: 42vw;
+  }
+  .storePanel > img
+  {
+    height: 200px;
+  }
+  .servicePanel
+  {
+    width: 42vw;
+    padding-bottom: 14%;
+  }
+  .servicePanel > img
+  {
+    height: 200px;
+  }
+  .contactPanel
+  {
+    width: 85vw;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .faceBook
+  {
+    width: 86.4%;
+    margin-left: 5px;
+    position: relative;
+    margin-top: -15%;
+    border-radius: 15px 15px 0 0;
+  }
+}
+@media screen and (max-width: 700px){
+  .pricechart
+  {
+    width: 100%;
+  }
+}
